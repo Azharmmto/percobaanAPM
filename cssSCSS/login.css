@@ -1,0 +1,47 @@
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+/* ? ===== Menu Responsive Boostrap =====
+     ===== url : https://getbootstrap.com/docs/5.0/layout/breakpoints/#max-width ===== */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container .row form {
+    max-width: 80%;
+    margin: auto !important;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container .row form {
+    max-width: 85%;
+    margin: auto !important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container .row form {
+    max-width: 85%;
+    margin: auto !important;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container .row form {
+    max-width: 85%;
+    margin: auto !important;
+  }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .container .row form {
+    max-width: 85%;
+    margin: auto !important;
+  }
+}

@@ -66,7 +66,7 @@
                     </div>
                 </form>
 
-                <div class="form-text text-center">Sudah punya akun, login <a href="#">disini</a></div>
+                <div class="form-text text-center">Sudah punya akun? login <a href="login.php" class="text-decoration-none">disini</a></div>
             </div>
         </div>
     </div>
