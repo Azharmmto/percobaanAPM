@@ -1,19 +1,35 @@
 <?php
+
+// Tutorial Membuat menu Register dan login : https://www.petanikode.com/php-login-register/
+
     // ? Variabel pada PHP
-   //  $server = 'localhost';
-   //  $user = 'root';
-   //  $pass = '';
-   //  $dtBase = 'apm_ukk';
+    $db_host = 'localhost';
+    $db_user = 'root';
+    $db_pass = '';
+    $db_name = 'apm_ukk';
 
  //  ? Menghubungkan database
-//  $conn = mysqli_connect($server,$user,$pass,$dtBase);
+//  $conn = mysqli_connect($db_server,$db_user,$db_pass,$db_name);
+
+    try {
+
+      $conn = new PDO("mysql:host=$db_host; dbname=$db_name", $db_user, $db_pass);
+
+    } catch(PDOException $e){
+
+      die("Terjadi Masalah Dengan Server: " . $e -> getMessage());
+
+    }
+
 
  // ? Mengecek Kondisi gagal berhasil
-//  if( !$koneksi = $koneksi ){
-//    echo 'Keneksi ke server GAGAL';
-// } else{
-//    echo 'Koneksi Berhasil';
-// }
+ if( !$conn ){
+
+   echo '<h1 style="color: red;">Keneksi ke Database Gagal</h1>';
+
+   echo '<p>Perikasa nama database yang dimasukan dan nama database yang berada ditable phpmyadmin</p>';
+
+}
 
 //  OPERATOR LOGIKA
 /* ? Mengecek apakah tersambung. - "Opertor Logika NOT di tulis menggunakna (!) berisi Jika nilainya "true" maka hasilnya "false" dan jika nilainya "false" maka hasilnya "true". */
